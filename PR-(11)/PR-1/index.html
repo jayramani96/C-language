@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+  <!-- icon link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Jquary -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div
+    class="nav w-[100%] h-20 sm:flex cursor-pointer sm:justify-center sm:items-center text-white font-bold bg-[#0F3CC9]">
+    <ul
+      class="hidden sm:flex sm:items-center sm:gap-4 sm:text-xs sm:mx-3 md:gap-5 md:text-sm lg:gap-8 lg:text-lg xl:gap-12 xl:text-xl 2xl:gap-16 2xl:text-2xl">
+      <li><img src="Image/jio-logo.png" alt="" class="sm:w-[70px] sm:h-[70px]"></li>
+      <li class="underline underline-offset-8 decoration-red-600">Mobile</li>
+      <li class="hover:underline underline-offset-8 decoration-red-600">True5G</li>
+      <li class="hover:underline underline-offset-8 decoration-red-600">JioFiber</li>
+      <li class="hover:underline underline-offset-8 decoration-red-600">AirFiber</li>
+      <li class="hover:underline underline-offset-8 decoration-red-600">Business</li>
+      <li class="hover:underline underline-offset-8 decoration-red-600">Devices</li>
+      <li class="hover:underline underline-offset-8 decoration-red-600">Apps</li>
+      <li class="hover:underline underline-offset-8 decoration-red-600">Supports</li>
+      <li>
+        <i class='bx bx-search sm:w-6 sm:h-6 sm:text-[18px] sm:flex sm:justify-center sm:items-center sm:rounded-full sm:bg-white sm:text-black 2xl:w-9 2xl:h-9 2xl:text[24px]'></i>
+      </li>
+      <li>
+        <i class='bx bx-user sm:w-6 sm:h-6 sm:text-[18px] sm:flex sm:justify-center sm:items-center sm:rounded-full sm:bg-white sm:text-black 2xl:w-9 2xl:h-9 2xl:text[24px]'></i>
+      </li>
+      <li></li>
+    </ul>
+    <ul class="sm:hidden h-20 px-7 font-extrabold text-4xl flex justify-between items-center border border-yellow-500">
+      <li><img src="Image/jio-logo.png" alt="" class="w-[70px] h-[60px]"></li>
+      <li><i class='bx bx-menu'></i></li>
+    </ul>
+  </div>
+  <!-- Navbar -->
+
+  <!-- Slider -->
+  <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+    speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true">
+    <div slot="container-start" class="parallax-bg" data-swiper-parallax="-23%"></div>
+
+    <swiper-slide class="bg-no-repeat bg-[-900px] sm:bg-[-700px] md:bg-[-600px] lg:bg-[-270px] xl:bg-[0px]"
+      style="background-image: url(Image/sliderimage-1.png); ">
+      <div class="title my-9 sm:w-[450px] sm:mx-16 sm:my-14 lg:w-[370px] xl:w-[500px] " data-swiper-parallax="-300">
+        <div class="text-3xl font-bold sm:text-4xl sm:font-extrabold">Entertainment just levelled up!</div>
+      </div>
+      <div class="subtitle my-8 sm:w-[450px] sm:mx-16 sm:-my-7 lg:w-[370px] xl:w-[500px] " data-swiper-parallax="-200">
+        <div class="text-xl font-medium sm:text-2xl sm:font-semibold">It gets more fun, and more entertaining with
+          Airfiber</div>
+      </div>
+      <div class="button my-8 sm:w-[450px] sm:mx-16 sm:my-14 lg:w-[370px] xl:w-[500px] " data-swiper-parallax="-100">
+        <button
+          class="w-[120px] h-[35px] bg-[#0F3CC9] hover:bg-[#0f3ec9c4] active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full font-semibold text-base sm:w-[150px] sm:h-[50px]  sm:font-bold sm:text-lg">Get
+          AirFiber</button>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="bg-no-repeat bg-[-900px] sm:bg-[-700px] md:bg-[-600px] lg:bg-[-270px] xl:bg-[0px]"
+      style="background-image: url(Image/sliderimage-2.png); ">
+      <div class="title my-9 sm:w-[450px] sm:mx-16 sm:my-14 lg:w-[370px] xl:w-[500px] " data-swiper-parallax="-300">
+        <div class="text-3xl font-bold sm:text-4xl sm:font-extrabold">Catch all cricketing action with Jio Cricket Plans
+        </div>
+      </div>
+      <div class="subtitle my-8 sm:w-[450px] sm:mx-16 sm:-my-7 lg:w-[370px] xl:w-[500px]" data-swiper-parallax="-200">
+        <div class="text-xl font-medium sm:text-2xl sm:font-semibold">Grab exclusive offers and enjoy the thrills with
+          every match twist.</div>
+      </div>
+      <div class="button my-8 sm:w-[450px] sm:mx-16 sm:my-14 lg:w-[370px] xl:w-[500px] " data-swiper-parallax="-100">
+        <button
+          class="w-[120px] h-[35px] bg-[#0F3CC9] hover:bg-[#0f3ec9c4] active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full font-semibold text-base sm:w-[150px] sm:h-[50px]  sm:font-bold sm:text-lg">Recharge
+          Now</button>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="bg-no-repeat bg-[-900px] sm:bg-[-700px] md:bg-[-600px] lg:bg-[-270px] xl:bg-[0px]"
+      style="background-image: url(Image/sliderimage-3.png); ">
+      <div class="title my-9 sm:w-[450px] sm:mx-16 sm:my-14 lg:w-[370px] xl:w-[500px] " data-swiper-parallax="-300">
+        <div class="text-3xl font-bold sm:text-4xl sm:font-extrabold">Enjoy Youtube on JioPhone Prima</div>
+      </div>
+      <div class="subtitle my-8 sm:w-[450px] sm:mx-16 sm:-my-7 lg:w-[370px] xl:w-[500px] " data-swiper-parallax="-200">
+        <div class="text-xl font-medium sm:text-2xl sm:font-semibold">Youtube watching is now possible on the all new
+          JioPhone Prima.</div>
+      </div>
+      <div class="button my-8 sm:w-[450px] sm:mx-16 sm:my-14 lg:w-[370px] xl:w-[500px]" data-swiper-parallax="-100">
+        <button
+          class="w-[150px] h-[35px] bg-[#0F3CC9] hover:bg-[#0f3ec9c4] active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full font-semibold text-base sm:w-[150px] sm:h-[50px]  sm:font-bold sm:text-lg">Buy
+          on Jiomart</button>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  <!-- Slider -->
+
+  <!-- Recharge -->
+  <div class="w-full h-[700px] my-4 bg-[#F5F5F5] sm:flex sm:flex-col sm:items-center">
+
+    <div class="flex justify-evenly items-center">
+
+      <!-- recharge Mobile -->
+      <div
+        class=" w-[95%] h-[500px]  my-6 rounded-xl sm:w-[55%] sm:border-none border-4 border-sky-600 flex justify-center items-center">
+        <div class="w-[90%] h-[380px] sm:w-[600px]">
+          <div class="button mx-8 flex justify-evenly">
+            <button
+              class="w-[48%] h-[40px] font-semibold text-base sm:h-[60px] sm:text-2xl bg-[#E0E0E0] rounded-full"><i
+                class='bx bxs-mobile'></i>Mobile</button>
+            <button
+              class="w-[48%] h-[40px] font-semibold text-base sm:h-[60px] sm:text-2xl bg-[#E0E0E0] rounded-full"><i
+                class='bx bx-wifi'></i>JioFiber</button>
+          </div>
+          <div class="my-5">
+            <div class="font-semibold text-2xl sm:text-3xl mx-8">Recharge</div>
+            <div class="my-3">
+              <form class="flex flex-col">
+                <label for="fnumber" class="mx-8 text-lg sm:text-xl">Jio Mobile Number</label>
+                <input type="tel" class="placeholder:ps-4 placeholder:text-black mx-8 mt-2 rounded-md border border-blue-600 sm:h-10" name="firstname"
+                  placeholder="Enter 10 digit number">
+              </form>
+            </div>
+
+          </div>
+          <div class="mx-8 my-5 bg-[#F5F5F5]">
+            <div class="font-medium sm:text-lg">Recharge with a Rs.2999 plan for a year full of digital delights.</div>
+          </div>
+          <div class="h-11 mx-8 sm:h-14">
+            <button
+              class="w-full h-[40px] text-white bg-[#0F3CC9] hover:bg-[#0f3ec9c4] active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full font-semibold text-base sm:h-[50px]  sm:font-bold sm:text-xl">Get
+              AirFiber</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- recharge Mobile -->
+
+      <!-- Image -->
+      <div class="hidden sm:w-[30%] sm:h-[500px] sm:flex sm:items-center">
+        <img class="w-full h-[200px] xl:h-[300px]" src="Image/plan.webp" alt="">
+      </div>
+      <!-- Image -->
+    </div>
+
+    <!-- Button -->
+    <div class="sm:flex sm:w-[90%] justify-evenly">
+      <div class="flex justify-evenly my-4 sm:w-[48%]">
+        <button class="w-[125px] h-10 border-2 rounded-full text-blue-800 font-semibold hover:border-blue-600">Get
+          JioAirFiber</button>
+        <div>
+        </div>
+        <button class="w-[125px] h-10 border-2 rounded-full text-blue-800 font-semibold hover:border-blue-600">Get Jio
+          SIM</button>
+      </div>
+      <div class="flex justify-evenly my-4 sm:w-[48%]">
+        <button class="w-[125px] h-10 border-2 rounded-full text-blue-800 font-semibold hover:border-blue-600">Get
+          JioFiber</button>
+        <div>
+        </div>
+        <button class="w-[125px] h-10 border-2 rounded-full text-blue-800 font-semibold hover:border-blue-600">Port to
+          Jio</button>
+      </div>
+    </div>
+    <!-- Button -->
+
+  </div>
+  <!-- Recharge -->
+
+  <!-- Discover the next big things -->
+  <div class="my-5 flex justify-center items-center">
+    <div class="w-[85%] h-[1200px] sm:h-[600px]   flex flex-col">
+      <div class="text-center font-extrabold text-3xl my-5">Discover the next big things</div>
+      <div
+        class="h-[1200px] flex flex-col justify-evenly sm:w-full sm:h-[600px] sm:flex sm:flex-row sm:justify-evenly sm:gap-4">
+        <div class="w-[100%] h-[500px] rounded-xl bg-center bg-no-repeat bg-cover flex flex-col sm:bg-center"
+          style="background-image: url(Image/true-5g-desktop.webp);">
+          <div
+            class="w-20 h-9 my-5 mx-3 bg-[#0F3CC9]  text-white font-bold italic rounded-full flex justify-center items-center ">
+            True 5G</div>
+          <div class="my-5 mx-3 text-white font-extrabold text-xl">Now in 7,448 locations in India</div>
+          <div
+            class="w-48 h-[40px] my-5 mx-3 flex justify-center items-center text-white bg-[#0F3CC9] hover:bg-[#0f3ec9c4] active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full font-semibold text-base">
+            Check availability</div>
+        </div>
+        <div class="w-[100%] h-[500px] rounded-xl bg-center bg-no-repeat bg-cover flex flex-col sm:bg-center"
+          style="background-image: url(Image/airfiber-desktop.webp);">
+          <div
+            class="w-20 h-9 my-5 mx-3 bg-[#0078AD] text-white font-bold italic rounded-full flex justify-center items-center ">
+            AIRFIBER</div>
+          <div class="my-5 mx-3 text-white font-extrabold text-xl">Available across 5488 towns in India</div>
+          <div
+            class="w-36 h-[40px] my-5 mx-3 flex justify-center items-center text-white bg-[#0078AD] hover:bg-[#3c6e84] active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full font-semibold text-base">
+            Know more</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Discover the next big things -->
+
+  <!-- Connecting Bharat with JioBharat -->
+  <div class="flex flex-col items-center">
+      <div class="text-center font-extrabold text-3xl my-5">Connecting Bharat with JioBharat</div>
+      <div class="w-[90%]">
+        <video controls>
+          <source src="Video/bharat-welcome-page-tvc1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div>
+        <div
+          class="w-32 h-[40px] my-5 mx-3 flex justify-center items-center text-white bg-[#0078AD] hover:bg-[#3c6e84] active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-full font-semibold text-base">
+          Buy Now</div>
+      </div>
+  </div>
+  <!-- Connecting Bharat with JioBharat -->
+
+  <!-- Gallery -->
+  <div class="w-full h-[2860px] md:h-[1620px] flex justify-center">
+    <div class="w-[90%] h-full">
+      <div class="text-center font-extrabold text-3xl my-5">
+        Explore the digital world with Jio
+      </div>
+      <div class="text-center font-semibold opacity-80 text-xl">
+        Exciting shopping deals, a variety of entertainment and seamless digital experience.
+      </div>
+
+      <!-- PR-1 -->
+      <div class="w-full h-[420px] my-5 md:h-[450px]">
+        <div
+          class="rounded-3xl w-full h-full bg-cover bg-center bg-no-repeat object-cover flex flex-col gap-1 md:hidden"
+          style="background-image: url(Image/myjio-23-04-24-mobile.webp);">
+          <div class="w-[260px] h-[40px] mx-1 mt-2 px-3 font-bold text-2xl sm:w-[380px]">MyJio
+          </div>
+          <div class="w-[260px] h-[55px] mx-1 mt-2 px-3 font-extrabold text-xl sm:w-[380px]">
+            One app for all your digital needs</div>
+          <div class="w-[260px] h-[50px] mx-1 mt-2 px-3 font-medium text-sm sm:w-[380px]">
+            Recharge, shop, stream, pay and do so much more on MyJio.</div>
+          <div class="w-[260px] h-[50px] mx-1 mt-2 px-3  sm:w-[380px]"><button
+              class="w-[110px] h-[45px] rounded-full text-white bg-[#0F3CC9] hover:bg-[#0D2986]">Get MyJio</button>
+          </div>
+        </div>
+        <div
+          class="invisible md:visible md:w-full md:h-full md:rounded-3xl md:bg-cover md:bg-center md:object-cover md:flex md:flex-col md:justify-center md:gap-2"
+          style="background-image: url(Image/myjio-23-04-24-desk.webp);">
+          <div
+            class="md:w-[300px] md:h-[45px] md:mx-1 md:mt-2 md:px-3 md:font-bold md:text-3xl">
+            MyJio
+          </div>
+          <div
+            class="md:w-[300px] md:h-[65px] md:mx-1 md:mt-2 md:px-3 md:font-extrabold md:text-2xl">
+            One app for all your digital needs</div>
+          <div class="w-[300px] md:h-[60px] md:mx-1 md:mt-2 md:px-3 md:font-medium md:text-lg">
+            Recharge, shop, stream, pay and do so much more on MyJio.</div>
+          <div class="md:w-[300px] md:h-[50px] md:mx-1 mt-2 px-3"><button
+              class="w-[110px] h-[45px] rounded-full text-white text-xl bg-[#0F3CC9] hover:bg-[#0D2986]">Get
+              MyJio</button></div>
+        </div>
+      </div>
+      <!-- PR-1 -->
+
+      <!-- PR-2 & PR-3 -->
+      <div class="w-full md:h-[500px] md:flex md:justify-between">
+
+        <!-- PR-2 -->
+          <div class="w-[100%] h-[420px] my-5 md:w-[39%] md:h-[450px] ">
+            <div
+              class="rounded-3xl w-full h-full bg-cover bg-center bg-no-repeat object-cover flex flex-col gap-1 md:hidden"
+              style="background-image: url(Image/Home-JioSaavn-Mobile.jpg);">
+              <div
+                class="w-[260px] h-[40px] mx-1 mt-2 px-3 text-white font-bold text-2xl sm:w-[380px]">
+                JioSaavn</div>
+              <div
+                class="w-[260px] h-[55px] mx-1 mt-2 px-3 text-white font-extrabold text-xl sm:w-[380px]">
+                Create your own playlist for long drives</div>
+              <div
+                class="w-[260px] h-[50px] mx-1 mt-2 px-3 text-white font-medium text-sm sm:w-[380px]">
+                JioSaavn has got songs for all moods.</div>
+              <div class="w-[260px] h-[50px] mx-1 mt-2 px-3 sm:w-[380px]"><button
+                  class="w-[110px] h-[45px] rounded-full text-black font-bold bg-[#1ECCB0] hover:bg-[#08332c]">Get
+                  JioSaavn</button></div>
+            </div>
+            <div
+              class="invisible md:visible md:w-[100%] md:h-full  md:rounded-3xl md:bg-cover md:bg-center md:object-cover md:flex md:flex-col md:justify-start md:gap-2"
+              style="background-image: url(Image/Home-JioSaavan-Desktop.jpg);">
+              <div
+                class="md:w-[95%] md:h-[45px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-bold md:text-3xl">
+                JioSaavn</div>
+              <div
+                class="md:w-[95%] md:h-[95px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-extrabold md:text-2xl">
+                Create your own playlist for long drives</div>
+              <div
+                class="md:w-[95%] md:h-[65px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-medium md:text-lg">
+                JioSaavn has got songs for all moods.</div>
+              <div class="md:w-[95%] md:h-[50px] md:mx-1 md:mt-2 md:px-3"><button
+                  class="w-[140px] h-[45px] rounded-full text-black font-bold text-xl bg-[#1ECCB0] hover:bg-[#08332c]">Get
+                  JioSaavn</button></div>
+            </div>
+          </div>
+        <!-- PR-2 -->
+
+        <!-- PR-3 -->
+          <div class="w-[100%] h-[420px] my-5 md:w-[59%] md:h-[450px]">
+            <div
+              class="rounded-3xl w-full h-full bg-cover bg-center bg-no-repeat object-cover flex flex-col gap-1 md:hidden"
+              style="background-image: url(Image/Home-JioCinema-Mobile.jpg);">
+              <div
+                class="w-[260px] h-[40px] mx-1 mt-2 px-3 text-white font-bold text-2xl sm:w-[380px]">
+                JioCinema</div>
+              <div
+                class="w-[260px] h-[55px] mx-1 mt-2 px-3 text-white font-extrabold text-xl sm:w-[380px]">
+                Brings American OTT shows</div>
+              <div
+                class="w-[260px] h-[50px] mx-1 mt-2 px-3 text-white font-medium text-sm sm:w-[380px]">
+                Check, popular shows from Peacock Hub are already up.</div>
+              <div class="w-[260px] h-[50px] mx-1 mt-2 px-3 sm:w-[380px]"><button
+                  class="w-[140px] h-[45px] rounded-full text-white font-bold bg-[#D9008D] hover:bg-[#8f005d]">Get
+                  JioCinema</button></div>
+            </div>
+            <div
+              class="invisible md:visible md:w-full md:h-full  md:rounded-3xl md:bg-cover md:bg-center md:object-cover md:flex md:flex-col md:justify-start md:gap-2"
+              style="background-image: url(Image/Home-JioCinema-Desktop.webp);">
+              <div
+                class="md:w-[95%] md:h-[45px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-bold md:text-3xl">
+                JioCinema</div>
+              <div
+                class="md:w-[95%] md:h-[65px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-extrabold md:text-2xl">
+                Brings American OTT shows</div>
+              <div
+                class="md:w-[95%] md:h-[65px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-medium md:text-lg">
+                Check, popular shows from Peacock Hub are already up.</div>
+              <div class="md:w-[95%] md:h-[50px] md:mx-1 md:mt-2 md:px-3"><button
+                  class="w-[160px] h-[45px] rounded-full text-white font-bold text-xl bg-[#D9008D] hover:bg-[#8f005d]">Get
+                  JioCinema</button></div>
+            </div>
+          </div>
+        <!-- PR-3 -->
+      </div>
+      <!-- PR-2 & PR-3 -->
+
+      <!-- PR-4, PR-5 & PR-6 -->
+      <div class="md:w-full md:h-[500px] md:flex md:gap-2">
+
+        <!-- PR-4 -->
+          <div class="w-full h-[420px] my-5 md:w-[99%] md:h-[450px] ">
+            <div
+              class="rounded-3xl w-full h-full bg-cover bg-center bg-no-repeat object-cover flex flex-col gap-1 md:hidden"
+              style="background-image: url(Image/jiomart-s.webp);">
+              <div
+                class="w-[260px] h-[40px] mx-1 mt-2 px-3 text-black font-bold text-2xl sm:w-[380px]">
+                JioMart</div>
+              <div
+                class="w-[260px] h-[55px] mx-1 mt-2 px-3 text-black font-extrabold text-xl sm:w-[380px]">
+                Enjoy awesome deals on daily needs</div>
+              <div class="w-[260px] h-[50px] mx-1 mt-2 px-3 sm:w-[380px]"><button
+                  class="w-[140px] h-[45px] rounded-full text-white font-bold bg-[#0078AD] hover:bg-[#0c5273]">Explore
+                  now</button></div>
+            </div>
+            <div
+              class="invisible md:visible md:w-[100%] md:h-full  md:rounded-3xl md:bg-cover md:bg-center md:object-cover md:flex md:flex-col md:justify-start"
+              style="background-image: url(Image/jiomart-l.webp);">
+              <div
+                class="md:w-[95%] md:h-[45px] md:mx-1 md:mt-2 md:px-3 md:text-black md:font-bold md:text-3xl">
+                JioMart</div>
+              <div
+                class="md:w-[95%] md:h-[130px] md:mx-1 md:mt-2 md:px-3 md:text-black md:font-extrabold md:text-2xl">
+                Enjoy awesome deals on daily needs</div>
+              <div class="md:w-[95%] md:h-[50px] md:mx-1 md:mt-2 md:px-3"><button
+                  class="w-[140px] h-[45px] rounded-full text-white font-bold text-xl bg-[#0078AD] hover:bg-[#0c5273]">Explore
+                  now</button></div>
+            </div>
+          </div>
+        <!-- PR-4 -->
+
+        <!-- PR-5 -->
+          <div class="w-full h-[420px] my-5 md:w-[99%] md:h-[450px] ">
+            <div
+              class="rounded-3xl w-full h-full bg-cover bg-center bg-no-repeat object-cover flex flex-col gap-1 md:hidden"
+              style="background-image: url(Image/remote-mobile-05-12-23.webp);">
+              <div
+                class="w-[260px] h-[40px] mx-1 mt-2 px-3 text-black font-bold text-2xl sm:w-[380px]">
+                JioGames</div>
+              <div
+                class="w-[260px] h-[60px] mx-1 mt-2 px-3 text-black font-extrabold text-xl sm:w-[380px]">
+                Experience gaming without any limits!</div>
+              <div
+                class="w-[260px] h-[50px] mx-1 mt-2 px-3 text-black font-medium text-sm sm:w-[380px]">
+                Dive into a world full of online games.</div>
+              <div class="w-[260px] h-[50px] mx-1 mt-2 px-3 sm:w-[380px]"><button
+                  class="w-[140px] h-[45px] rounded-full text-white font-bold bg-[#005028] hover:bg-[#0c5273]">Try
+                  JioGames</button></div>
+            </div>
+            <div
+              class="invisible md:visible md:w-[100%] md:h-full  md:rounded-3xl md:bg-cover md:bg-center md:object-cover md:flex md:flex-col md:justify-start"
+              style="background-image: url(Image/remote-desktop-05-12-23.webp);">
+              <div
+                class="md:w-[95%] md:h-[45px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-bold md:text-3xl">
+                JioGames</div>
+              <div
+                class="md:w-[95%] md:h-[50px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-extrabold md:text-xl">
+                Experience gaming without any limits!</div>
+              <div
+                class="md:w-[95%] md:h-[65px] md:mx-1 md:mt-2 md:px-3 md:text-white md:font-medium md:text-lg">
+                Dive into a world full of online games.</div>
+              <div class="md:w-[95%] md:h-[50px] md:mx-1 md:mt-2 md:px-3"><button
+                  class="w-[140px] h-[45px] rounded-full text-black font-bold text-xl bg-[#1ECCB0] hover:bg-[#08332c]">Try
+                  JioGames</button></div>
+            </div>
+          </div>
+
+        <!-- PR-5 -->
+
+        <!-- PR-6 -->
+          <div class="w-full h-[420px] my-5 md:w-[99%] md:h-[450px]">
+            <div
+              class="rounded-3xl w-full h-full bg-cover bg-center bg-no-repeat object-cover flex flex-col gap-1 md:hidden"
+              style="background-image: url(Image/apps-mobile.webp);">
+              <div
+                class="w-[260px] h-[100px] mx-1 mt-2 px-3 text-black font-extrabold text-2xl sm:w-[380px]">
+                Enrich your digital life with a host of Jio apps</div>
+              <div class="w-[260px] h-[50px] mx-1 mt-2 px-3 sm:w-[380px]"><button
+                  class="w-[140px] h-[45px] rounded-full text-white font-bold bg-[#0F3CC9] hover:bg-[#0c5273]">Explore
+                  now</button></div>
+            </div>
+            <div
+              class="invisible md:visible md:w-[100%] md:h-full  md:rounded-3xl md:bg-cover md:bg-center md:object-cover md:flex md:flex-col md:justify-start"
+              style="background-image: url(Image/apps-desktop.webp);">
+              <div
+                class="md:w-[95%] md:h-[100px] md:mx-1 md:mt-2 md:px-3 md:text-black md:font-extrabold md:text-2xl">
+                Enrich your digital life with a host of Jio apps</div>
+              <div class="md:w-[95%] md:h-[50px] md:mx-1 md:mt-2 md:px-3"><button
+                  class="w-[140px] h-[45px] rounded-full text-white font-bold text-xl bg-[#0F3CC9] hover:bg-[#0c5273]">Explore
+                  now</button></div>
+            </div>
+          </div>
+  
+        <!-- PR-6 -->
+      </div>
+      <!-- PR-4, PR-5 & PR-6 -->
+    </div>
+  </div>
+  <!-- Gallery -->
+
+  <!-- Get bestsellers at best prices -->
+  <div class="w-full my-10 flex justify-center bg-[#F5F5F5]">
+    <div class="w-[90%] my-14 h-full">
+      <div class="w-[100%] h-[80px] mt-7 font-extrabold text-3xl text-center">Get bestsellers at best prices</div>
+      <div class="w-full h-full flex flex-col justify-around gap-5 sm:flex-row sm:justify-evenly">
+        <div class="w-full h-[350px] sm:w-[33%] sm:h-[350px]  bg-white rounded-3xl">
+          <div class="w-[90%] ms-3 mt-3 object-cover"><img class="w-[300px] h-[150px]" src="Image/jiomotive-11-12-2023.png" alt=""></div>
+          <div class="w-[90%] h-10 ms-3 mt-3 font-extrabold text-2xl">JioMotive</div>
+          <div class="w-[90%] h-7 ms-3 mt-3 font-medium">$24.00</div>
+          <div class="w-[90%] h-8 ms-3 mt-3"><button class="w-36 rounded-3xl text-[#0A2885] font-semibold border-2 hover:border-[#0A2885]">Buy from JioMart</button></div>
+        </div>
+        <div class="w-full h-[350px] sm:w-[33%] sm:h-[350px]  bg-white rounded-3xl">
+          <div class="w-[90%] ms-3 mt-3 object-cover"><img class="w-[300px] h-[150px]" src="Image/jiodive.jpeg" alt=""></div>
+          <div class="w-[90%] h-10 ms-3 mt-3 font-extrabold text-2xl">JioDive</div>
+          <div class="w-[90%] h-7 ms-3 mt-3 font-medium">$24.00</div>
+          <div class="w-[90%] h-8 ms-3 mt-3 "><button class="w-36 rounded-3xl text-[#0A2885] font-semibold border-2 hover:border-[#0A2885]">Buy from JioMart</button></div>
+        </div>
+        <div class="w-full h-[350px] sm:w-[33%] sm:h-[350px]  bg-white rounded-3xl">
+          <div class="w-[90%] ms-3 mt-3 object-cover"><img class="w-[300px] h-[150px]" src="Image/JioBook.webp" alt=""></div>
+          <div class="w-[90%] h-10 ms-3 mt-3 font-extrabold text-2xl">JioBook</div>
+          <div class="w-[90%] h-7 ms-3 mt-3 font-medium">$24.00</div>
+          <div class="w-[90%] h-8 ms-3 mt-3"><button class="w-36 rounded-3xl text-[#0A2885] font-semibold border-2 hover:border-[#0A2885]">Buy from JioMart</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Get bestsellers at best prices -->
+
+
+  <!-- carreer -->
+  <div class="w-full h-[1000px] sm:h-[500px] bg-[#E7EBF8] flex justify-center items-center my-5">
+    <div class="w-[90%] h-[900px] flex flex-col justify-evenly sm:h-[403px] sm:flex-row sm:justify-between">
+      <div class="w-[100%] sm:w-[48%] h-[400px] bg-white rounded-3xl ">
+        <div class="w-full h-[250px]  rounded-3xl">
+          <img src="Image/career-new.webp" class="w-full h-full rounded-3xl" alt="">
+        </div>
+        <div class="w-full h-[80px] mt-3 pl-3 font-medium text-lg">
+          Reliance jio Infocomm Ltd. has one again been recognised as a 'Great Place To Work'.
+        </div>
+        <div class="w-full h-[50px] mt-3 pl-2">
+          <button class="w-[180px] h-[30px] border-2 rounded-full text-[#0A2885] text-sm font-semibold hover:border-[#0A2885]">View job openings</button>
+        </div>
+      </div>
+      <div class="w-[100%] sm:w-[48%] h-[400px] bg-white rounded-3xl ">
+        <div class="w-full h-[250px]  rounded-3xl">
+          <img src="Image/silkyara-tunnel-storycard.webp" class="w-full h-full rounded-3xl" alt="">
+        </div>
+        <div class="w-full h-[80px] mt-3 pl-3 font-medium text-lg">
+          Jio reacues the trapped inside the Silkyara tunnel with seamless internet.
+        </div>
+        <div class="w-full h-[50px] mt-3 pl-2">
+          <button class="w-[180px] h-[30px] border-2 rounded-full text-[#0A2885] text-sm font-semibold hover:border-[#0A2885]">View all Jio stories</button>
+        </div>
+      </div>
+     </div> 
+  </div>
+  <!-- carreer -->
+
+  <!-- Grow your business faster than ever -->
+  <div class="w-full h-[500px] sm:h-[1000px] lg:h-[500px] flex justify-center items-center">
+    <div class="w-[90%] h-[400px] sm:h-[800px] lg:h-[400px] lg:hidden">
+      <div class="w-full h-full bg-cover bg-no-repeat sm:flex sm:flex-col sm:justify-end lg:justify-center rounded-3xl py-5 px-5" style="background-image: url(Image/jiobusisness-mobile.webp);">
+        <div class="w-[80%] sm:w-[60%] text-2xl  font-extrabold text-white">Grow your business faster than ever</div>
+        <div class="w-[80%] sm:w-[60%] text-lg mt-5  font-semibold text-white">Explore future-ready digital solutions for business across industries.</div>
+        <div class="w-[80%] sm:w-[60%] mt-5"><button class="w-[180px] h-[45px] text-white text-base rounded-full bg-[#0F3CC9] hover:bg-[#0c5273]">Explore JioBusisness</button></div>
+      </div>
+    </div>
+    <div class="hidden lg:flex lg:w-[90%] lg:h-[400px]">
+      <div class="w-full h-full bg-cover bg-no-repeat lg:flex lg:flex-col lg:justify-center rounded-3xl py-5 px-9 lg:px-14" style="background-image: url(Image/jiobusisness-png.png);">
+        <div class="w-[40%] text-2xl lg:text-3xl font-extrabold text-white">Grow your business faster than ever</div>
+        <div class="w-[40%] text-lg lg:text-xl mt-5  font-semibold text-white">Explore future-ready digital solutions for business across industries.</div>
+        <div class="w-[40%] mt-5"><button class="w-[180px] h-[45px] text-white text-base rounded-full bg-[#0F3CC9] hover:bg-[#0c5273]">Explore JioBusisness</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- Grow your business faster than ever -->
+
+
+  <!-- Need guidance? -->
+  <div class="w-full h-[300px] bg-[#0F3CC9] flex flex-col justify-evenly items-center pt-4">
+    <div class="w-[90%] font-extrabold text-3xl sm:text-[40px] sm:leading-[46px] text-center text-white">Need guidance?</div>
+    <div class="w-[90%] font-extralight text-xl text-center text-white">We would love to help you.</div>
+    <div class="w-[90%] h-[85px] md:h-[50px] flex flex-col items-center justify-between md:flex-row">
+      <div class="w-[100%] flex justify-evenly md:justify-around">
+        <div class="w-[30%] h-[30px] text-white text-center rounded-full border-2 border-gray-400 hover:border-white">Support</div>
+        <div class="w-[45%] h-[30px] sm:w-[35%] text-white text-center rounded-full border-2 border-gray-400 hover:border-white">Chat with us</div>
+      </div>
+      <div class="w-[100%] flex justify-evenly md:justify-around">
+        <div class="w-[30%] h-[30px] text-white text-center rounded-full border-2 border-gray-400 hover:border-white">Call us</div>
+        <div class="w-[45%] h-[30px] sm:w-[35%] text-white text-center rounded-full border-2 border-gray-400 hover:border-white">Find a store</div>
+      </div>
+    </div>
+  </div> 
+  <!-- Need guidance? -->
+
+  <!-- Footer -->
+  <div class="w-full h-auto md:h-[650px] lg:h-[500px] flex flex-col justify-center cursor-pointer items-center">
+    <div class="w-[90%] py-2 gap-y-3 flex flex-col lg:flex-row justify-evenly">
+
+      <div class="md:w-full md:h-full lg:w-[70%] md:flex">
+      <!-- our offerings -->
+      <div class="md:w-full md:flex md:flex-col">
+        <div class="p1 w-full">
+          <div class=" w-full h-full flex justify-between items-center px-2 ">
+            <div class="font-semibold text-lg lg:font-extrabold">Our offerings</div>
+            <div class="md:hidden"><i class='bx bx-plus font-semibold text-2xl'></i></div>
+          </div>
+        </div>
+        <div class="p11 hidden w-full h-full md:flex md:flex-col  leading-[30px] px-2">
+          <div>Prepaid</div>
+          <div>Postpaid</div>
+          <div>Port to Jio</div>
+          <div>International roaming</div>
+          <div>Apps</div>
+          <div>eSIM</div>
+          <div>WiFi calling</div>
+          <div>JioTunes</div>
+          <div>Devices</div>
+          <div>JioAds</div>
+          <div>JioBook</div>
+          <div>5G Network</div>
+        </div> 
+      </div>
+      <!-- our offerings -->
+
+      <!-- Support -->
+      <div class="md:w-full md:flex md:flex-col">
+        <div class="p1 w-full">
+          <div class="w-full h-full flex justify-between items-center px-2">
+            <div class="font-semibold text-lg lg:font-extrabold">Support</div>
+            <div class="md:hidden"><i class='bx bx-plus font-semibold text-2xl'></i></div>
+          </div>    
+        </div>
+        <div class="p11 hidden w-full h-full md:flex md:flex-col leading-[30px] px-2">
+          <div>Track order</div>
+          <div>My account</div>
+          <div>FAQ</div>
+          <div>Locate us</div>
+          <div>Lost SIM</div>
+          <div>Claim refund</div>
+          <div>Reclaim number</div>
+          <div>Feedback</div>
+          <div>Contact us</div>
+        </div> 
+      </div>
+      <!-- Support -->
+
+      <!-- our company -->
+      <div class="md:w-full md:flex md:flex-col">
+        <div class="p1 w-full">
+          <div class="w-full h-full flex justify-between items-center px-2">
+            <div class="font-semibold text-lg lg:font-extrabold">Our company</div>
+            <div class="md:hidden"><i class='bx bx-plus font-semibold text-2xl'></i></div>
+          </div>      
+        </div>
+        <div class="p11 hidden w-full h-full md:flex md:flex-col leading-[30px] px-2">
+          <div>Reliance Industries</div>
+          <div>Reliance Foundation</div>
+          <div>JioLife</div>
+          <div>Careers</div>
+          <div>Investor relations</div>
+        </div> 
+      </div>
+      <!-- our company -->
+
+      <!-- Useful links -->
+      <div class="md:w-full md:flex md:flex-col">
+        <div class="p1 w-full">
+          <div class="w-full h-full flex justify-between items-center px-2">
+            <div class="font-semibold text-lg lg:font-extrabold">Useful links</div>
+            <div class="md:hidden"><i class='bx bx-plus font-semibold text-2xl'></i></div>
+          </div>      
+        </div>
+        <div class="p11 hidden w-full h-full md:flex md:flex-col leading-[30px] px-2">
+          <div>Get Jio SIM</div>
+          <div>Choice number</div>
+          <div>JioAutoPay</div>
+          <div>Brand offers</div>
+          <div>Partner with Jio</div>
+          <div>Get JioAirFiber</div>
+          <div>Sitemap</div>
+        </div> 
+      </div>
+      <!-- Useful links -->
+      </div>
+      
+      <div class="md:flex lg:w-[30%] lg:flex lg:flex-col lg:gap-5">
+      <!-- Connect with us -->
+      <div class="w-full h-[100px] px-2">
+        <div class="font-extrabold text-2xl">Connect with us</div>
+        <div class="w-full flex my-4 text-2xl gap-4">
+          <div><i class='bx bxl-twitter' ></i></div>
+          <div><i class='bx bxl-instagram' ></i></div>
+          <div><i class='bx bxl-facebook-circle' ></i></div>
+          <div><i class='bx bxl-youtube' ></i></div>
+          <div><i class='bx bxl-linkedin-square' ></i></div>
+        </div>
+      </div>
+      <!-- Connect with us -->
+
+      <!-- Download MyJio -->
+      <div class="w-full h-[100px] px-2">
+        <div class="font-extrabold text-2xl">Download Myjio</div>
+        <div class="w-full flex my-4 text-2xl gap-4">
+          <div><img src="Image/G-Play.svg" alt=""></div>
+          <div><img src="Image/AppStore.svg" alt=""></div>
+        </div>
+      </div>
+      <!-- Download MyJio -->
+      </div>
+      
+    </div>
+  </div>
+  <!-- Footer -->
+
+
+  <!-- swiper script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
+
+
+<script>
+
+$(document).ready(function(){
+  // $(this).find(".p1").click(function(){
+  //   $(this).next(".p11").slideToggle("slow");
+  // })
+  $(".p1").click(function(){
+    $(this).next().slideToggle(600);  
+  })
+});
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+  
+
+</script>
