@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 main(){
-    int a = '2';
-    float b = '3.14';
+    int a = 2;
+    float b = 3.14;
     char c = 'Y';
 
     int *p1 = &a;
     float *p2 = &b;
     char *p3 = &c;
 
-    printf("%u %d\n", a, *p1);
-    printf("%u %f\n", b, *p2);
-    printf("%u %c\n", c, *p3);
+    printf("Value of integer :  %p %d\n",p1,*p1);
+    printf("Value of float :    %u %.2f\n",p2,*p2);
+    printf("Value of charcter : %x %c\n",p3,*p3);
 }
