@@ -2,7 +2,7 @@
 
 main(){
 
-    char array[]= "Harsh";
+    char array[]= "Jay";
     char *p;
     p=&array;
     for(int i=0; array[i] != NULL; i++){
